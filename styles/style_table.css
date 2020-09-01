@@ -1,0 +1,16 @@
+table.sw {
+ width: 790px;
+ border-collapse: collapse;
+}
+.sw td {
+ font-size: 0.9em;
+ padding: 5 5 5 5;
+ border-bottom: 1px dotted darkblue;
+}
+
+.sw td.image {
+ text-align: center;
+}
+.sw td.image img {
+ border: 1px #009A31;
+}

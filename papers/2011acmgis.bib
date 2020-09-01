@@ -1,0 +1,18 @@
+@inproceedings{Weiss11_gis,
+    author = "Weiss, Kenneth and Fellegara, Riccardo and De Floriani, Leila and Velloso, Marcelo",
+    title = "The PR-star Octree: A Spatio-topological Data Structure for Tetrahedral Meshes",
+    booktitle = "Proceedings of the 19th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems",
+    series = "GIS '11",
+    year = "2011",
+    isbn = "978-1-4503-1031-4",
+    location = "Chicago, Illinois",
+    pages = "92--101",
+    numpages = "10",
+    url = "http://doi.acm.org/10.1145/2093973.2093987",
+    doi = "10.1145/2093973.2093987",
+    acmid = "2093987",
+    publisher = "ACM",
+    address = "New York, NY, USA",
+    abstract = "We propose the PR-star octree as a combined spatial data structure for performing efficient topological queries on tetrahedral meshes. The PR-star octree augments the Point Region octree (PR Octree) with a list of tetrahedra incident to its indexed vertices, i.e. those in the star of its vertices. Thus, each leaf node encodes the minimal amount of information necessary to locally reconstruct the topological connectivity of its indexed elements. This provides the flexibility to efficiently construct the optimal data structure to solve the task at hand using a fraction of the memory required for a corresponding data structure on the global tetrahedral mesh. Due to the spatial locality of successive queries in typical GIS applications, the construction costs of these runtime data structures are amortized over multiple accesses while processing each node. We demonstrate the advantages of the PR-star octree representation in several typical GIS applications, including detection of the domain boundaries, computation of local curvature estimates and mesh simplification.
+"
+}
