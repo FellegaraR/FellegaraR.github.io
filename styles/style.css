@@ -47,27 +47,29 @@ table {
 }
 
 #content
-{ width: 800px;
+{ width: 860px;
 /*  overflow: hidden;*/
   margin: 0 auto 0 auto;
 /*  padding: 10px 20px 20px 20px;*/
   border: 15px solid #FFF;
-  font-family: "Verdana";
+  font-family: "Calibri";
   float: center;
-  font-size: 15px;
+  font-size: 15px;  
 } 
 
 
 #center
 { text-align: justify;
-  width: 550px;
+  width: 600px;
   padding: 10px 15px 10px 15px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  font-family: "Calibri";
+  font-size: large;
 }
 
 #paper
 { text-align: left;
-  width: 800px;
+  width: 860px;
   margin-top: 10px;
   padding: 3px 3px 3px 3px;
   background-color: whitesmoke;
@@ -98,27 +100,26 @@ table {
   float: right;
   width: 180px;
   padding: 10px 15px 10px 15px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   font-size: smaller;
   height: auto
   }
   
 #header{
   float: center;
-  width: 800px;
-  height: 65px;
+  width: 860px;
+  height: 50px;
   margin: 0 auto 0 auto;
 /*  padding: 10px 15px 10px 200px;*/
-  background-color: whitesmoke;
-  
+  background-color: whitesmoke;  
   font-size: xx-large;
-  font-family: "Verdana";
+  font-family: "Calibri";
 }
   
 #name{
     font-size: large;
     font-weight: bold;
-    font-family: "Verdana";
+    font-family: "Calibri";
     font-style: oblique;
     color: darkblue;
     
@@ -126,13 +127,13 @@ table {
 
 #pubblication{
     font-size: x-small;
-    font-family: "Verdana";
+    font-family: "Calibri";
     color: rgb(153,0,0);
     text-decoration: none;
 }
 
 #title{
-    font-family: "Verdana";
+    font-family: "Calibri";
     color: darkblue;
     font-weight: bold;
 	font-size: xx-large;
@@ -140,8 +141,10 @@ table {
 
 
 #menubar
-{ height: 14px;
-  width: 80%;}
+{ 
+  height: 14px;
+  width: 80%;
+}
 
 ul#menu
 { float: left;
@@ -155,25 +158,35 @@ ul#menu li
   margin: 0px 0px 0 0;}
 
 ul#menu li a
-{ font: normal 50% 'trebuchet ms', sans-serif;
+{ 
+  /* font: normal 50% 'trebuchet ms', sans-serif; */
   display: block; 
   float: left; 
-  height: 20px;
+  height: 15px;
   padding: 6px 20px 5px 20px;
   text-align: center;
   color: #000;
   text-decoration: none;
-  background: whitesmoke;} 
+  background: whitesmoke;
+  font-size: medium;
+  font-family: "Calibri";
+} 
 
 ul#menu li.selected a, ul#menu li.selected a:hover
-{ background: ghostwhite;
-  color: darkblue;}
+{ 
+  /*background: ghostwhite;*/
+  color: darkblue;
+  font-weight: bold;
+}
 
 ul#menu li a:hover
 { color: darkblue;}
 
 #info
-{ text-align: left;
+{ 
+  font-family: "Calibri";
+  text-align: center;
   margin-top: 10px;
   font-size: small;
+  vertical-align: middle;
 }

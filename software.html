@@ -1,16 +1,15 @@
 <head>
   <title>Riccardo Fellegara - Home Page</title>
 	<link rel='stylesheet' type='text/css' href='styles/style.css' />
-  <script type='text/javascript' src='scripts/details-shim.min.js'></script>
-  <link rel='stylesheet' type='text/css' href='styles/details-shim.min.css'>
-  <link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
+	<link rel="stylesheet" type="text/css" href="styles/style_table.css" />
+  	<link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
 </head>
 <body>
 <div id='main'>
 		<div id='header'>
-				<table width=90%>
+				<table width=95%>
 					<tr>							
-						<td align='left'><div id=title>Riccardo Fellegara</div></td>							
+						<td align='right'><div id=title>Riccardo Fellegara</div></td>							
 					</tr>
 				</table>
 				<div id='menubar'>
@@ -25,7 +24,42 @@
 <div id=paper>
 	<table class="sw">
 		<tr>
-			
+			<!-- <td class="image">
+				<img width=70% src="images/tetra-trees-point-query-1.png" /> <br><br>
+				<img width=70% src="images/" />
+			</td> -->
+			<td>
+				<span class="left"><img src="images/tetra-trees-range-query.png" align="top" border="0" height="225" width="225" style="border-radius: 20%;"></span>
+				<br><br>
+				<b>Tetrahedral trees</b>
+				<br> 
+				In this library we address the problem of performing efficient spatial and topological queries on large tetrahedral meshes with arbitrary topology and complex boundaries. 
+				Such meshes arise in several application domains, such as 3D Geographic Information Systems (GISs), scientific visualization, and finite element analysis. 
+				To this aim, we have defined the Tetrahedral trees, a family of spatial indexes based on a nested space subdivision (an octree or a kD-tree) and defined by several different subdivision criteria. 
+				In this library, we provide efficient algorithms for spatial and topological queries on tetrahedral meshes.
+				
+		        The source code and additional information can be found on <A target='_blank' href="https://github.com/UMDGeoVis/Tetrahedral_Trees"><b>GitHub</b></A>. 
+				<br><br><br>
+				
+				Main paper:
+				<ol>
+					<li>
+						<b>Tetrahedral Trees: A Family of Hierarchical Spatial Indexes for Tetrahedral Meshes</b> <br>
+						Riccardo Fellegara, Leila De Floriani, Paola Magillo, and Kenneth Weiss <br>
+						<i>ACM Transaction on Spatial Algorithms and Systems 6, 4, Article 23, 34 pages, 2020</i> <br>
+						[<A target='_blank' href="https://doi.org/10.1145/3385851">doi</A>] <br>
+					</li>
+				</ol>
+				Paper describing the Stellar decomposition idea and the compressed encoding used in Tetrahedral trees library:
+				<ol>
+					<li>
+						<b>The Stellar tree: a Compact Representation for Simplicial Complexes and Beyond </b> <br>
+						Riccardo Fellegara, Kenneth Weiss and Leila De Floriani <br>
+						<i>ArXiv e-prints, 2019 (v2) </i> <br>
+						[<A target='_blank' href="https://arxiv.org/abs/1707.02211">doi</A>] <br>
+					</li>
+				</ol>
+			</td>	
 		</tr>
 	</table>
 </div>
