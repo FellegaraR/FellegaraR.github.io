@@ -29,6 +29,34 @@
 				<img width=70% src="images/" />
 			</td> -->
 			<td>
+				<span class="left"><img src="images/neptune_octree_kv100_translated.png" align="top" border="0" height="225" width="225" style="border-radius: 20%;"></span>
+				<br><br>
+				<b>Stellar trees</b>
+				<br> 
+				In this library we address the problem of the efficient representation and management of simplicial and cell complexes in arbitrary dimension and with arbitrary domain. 
+				Managing complexes in three dimensions and higher is not a simple task, since the topological data structures proposed in the literature do not scale when the size and 
+				the dimension of a complex become high. We propose the Stellar library as a topological C++ framework for performing efficient topological queries on simplicial and 
+				non-simplicial meshes. The Stellar tree library provides a scalable and compact representation that encodes the minimal information to locally reconstruct the 
+				topological connectivity of its indexed elements. This provides the flexibility to efficiently construct the optimal data structures to solve the task at hand using a 
+				fraction of the memory required for a corresponding topological data structure on the global mesh. The efficiency of the Stellar library increases with the execution of 
+				successive queries, as the construction costs of these runtime data structures are amortized over multiple accesses while processing each node.
+				
+		        The source code and additional information can be found on <A target='_blank' href="https://github.com/FellegaraR/Stellar_tree"><b>GitHub</b></A>. 
+				<br><br><br>
+				
+				Main paper:
+				<ol>					
+					<li>
+						<b>The Stellar decomposition: a Compact Representation for Simplicial Complexes and Beyond </b> <br>
+						Riccardo Fellegara, Kenneth Weiss and Leila De Floriani <br>
+						<i>Computers & Graphics, 98, 322-343, 2021 </i> <br>
+						[<A target='_blank' href="https://doi.org/https://doi.org/10.1016/j.cag.2021.05.002">doi</A>] <br>
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
 				<span class="left"><img src="images/tetra-trees-range-query.png" align="top" border="0" height="225" width="225" style="border-radius: 20%;"></span>
 				<br><br>
 				<b>Tetrahedral trees</b>
@@ -38,7 +66,7 @@
 				To this aim, we have defined the Tetrahedral trees, a family of spatial indexes based on a nested space subdivision (an octree or a kD-tree) and defined by several different subdivision criteria. 
 				In this library, we provide efficient algorithms for spatial and topological queries on tetrahedral meshes.
 				
-		        The source code and additional information can be found on <A target='_blank' href="https://github.com/UMDGeoVis/Tetrahedral_Trees"><b>GitHub</b></A>. 
+		        The source code and additional information can be found on <A target='_blank' href="https://github.com/FellegaraR/Tetrahedral_Trees"><b>GitHub</b></A>. 
 				<br><br><br>
 				
 				Main paper:
@@ -49,17 +77,36 @@
 						<i>ACM Transaction on Spatial Algorithms and Systems 6, 4, Article 23, 34 pages, 2020</i> <br>
 						[<A target='_blank' href="https://doi.org/10.1145/3385851">doi</A>] <br>
 					</li>
-				</ol>
-				Paper describing the Stellar decomposition idea and the compressed encoding used in Tetrahedral trees library:
+				</ol>				
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<span class="left"><img src="images/terrain_trees.png" align="top" border="0" height="225" width="225" style="border-radius: 20%;"></span>
+				<br><br>
+				<b>Terrain trees</b>
+				<br> 
+				In this library a a new in-core family of spatial indexes for the representation and analysis of Triangulated Irregular Networks (TINs) is defined. 
+				Terrain trees combine a minimal encoding of the connectivity of the underlying triangle mesh with a hierarchical spatial index, implicitly representing 
+				the other topological relations among vertices, edges and vertices. Topological relations are extracted locally within each leaf block of the hierarchal 
+				index at runtime, based on specific application needs. This library contains a kernel for connectivity and spatial queries, and modules for extracting 
+				morphological features, including edge and triangle slopes, roughness, curvature. It also contains modules for extracting topological structures, 
+				like critical point, critical net, watershed segmentation, based on the discrete Morse gradient, and a technique for multivariate data visualization, 
+				which enables the analysis of multiple scalar fields defined on the same terrain. By working on TINs generated from big LiDAR (Light, Detection and Ranging) 
+				data sets, we demonstrate the effectiveness and scalability of the Terrain trees against state-of-the-art compact data structures.
+				
+		        The source code and additional information can be found on <A target='_blank' href="https://github.com/FellegaraR/Terrain_Trees"><b>GitHub</b></A>. 
+				<br><br><br>
+				
+				Main paper:
 				<ol>
 					<li>
-						<b>The Stellar tree: a Compact Representation for Simplicial Complexes and Beyond </b> <br>
-						Riccardo Fellegara, Kenneth Weiss and Leila De Floriani <br>
-						<i>ArXiv e-prints, 2019 (v2) </i> <br>
-						[<A target='_blank' href="https://arxiv.org/abs/1707.02211">doi</A>] <br>
+						<b>Terrain trees: a framework for representing, analyzing and visualizing triangulated terrains</b> <br>
+						Riccardo Fellegara, Federico, Iuricich, Yunting Song, and Leila De Floriani <br>
+						<i>Submitted for evaluation to Springer GeoInformatica Journal</i> <br>						
 					</li>
-				</ol>
-			</td>	
+				</ol>				
+			</td>
 		</tr>
 	</table>
 </div>

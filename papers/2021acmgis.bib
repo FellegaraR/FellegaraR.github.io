@@ -1,0 +1,17 @@
+@inproceedings{Song2021Efficient,
+author = {Song, Yunting and Fellegara, Riccardo and Iuricich, Federico and De Floriani, Leila},
+title = {Efficient Topology-Aware Simplification of Large Triangulated Terrains},
+year = {2021},
+isbn = {9781450386647},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3474717.3484261},
+doi = {10.1145/3474717.3484261},
+abstract = {A common first step in the terrain processing pipeline of large Triangulated Irregular Networks (TINs) is simplifying the TIN to make it manageable for further processing. The major problem with TIN simplification algorithms is that they create or remove critical points in an uncontrolled way. Topology-aware operators have been defined to solve this issue by coarsening a TIN without affecting the topology of its underlying terrain, i.e., without modifying critical simplices describing pits, saddles, peaks, and their connectivity. While effective, existing algorithms are sequential in nature and are not scalable enough to perform well with large terrains on multicore systems. Here, we consider the problem of topology-aware simplification of very large meshes. We define a topology-aware simplification algorithm on a compact and distributed data structure for triangle meshes, namely the Terrain trees. Terrain trees reduce both the memory and time requirements of the simplification procedure by adopting a batched processing strategy of the mesh elements. Furthermore, we define a new parallel topology-aware simplification algorithm that takes advantage of the spatial domain decomposition at the basis of Terrain trees. Scalability and efficiency are experimentally demonstrated on real-world TINs originated from topographic and bathymetric LiDAR data. Our experiments show that topology-aware simplification on Terrain trees uses 40% less memory and half the time than the same approach implemented on the most compact and efficient connectivity-based data structure for TINs. Beyond that, our parallel algorithm on the Terrain trees reaches a 12x speedup when using 20 threads.},
+booktitle = {Proceedings of the 29th International Conference on Advances in Geographic Information Systems},
+pages = {576–587},
+numpages = {12},
+keywords = {edge contraction, topological methods, shared memory processing, spatial indexes, terrain simplification},
+location = {Beijing, China},
+series = {SIGSPATIAL '21}
+}
