@@ -1,0 +1,21 @@
+@Article{Song2024Parallel,
+  author     = {Song, Yunting and Fellegara, Riccardo and Iuricich, Federico and De Floriani, Leila},
+  journal    = {ACM Trans. Spatial Algorithms Syst.},
+  title      = {Parallel Topology-aware Mesh Simplification on Terrain Trees},
+  year       = {2024},
+  issn       = {2374-0353},
+  month      = may,
+  number     = {2},
+  volume     = {10},
+  abstract   = {We address the problem of performing a topology-aware simplification algorithm on a compact and distributed data structure for triangle meshes, the Terrain trees. Topology-aware operators have been defined to coarsen a Triangulated Irregular Network (TIN) without affecting the topology of its underlying terrain, i.e., without modifying critical features of the terrain, such as pits, saddles, peaks, and their connectivity. However, their scalability is limited for large-scale meshes. Our proposed algorithm uses a batched processing strategy to reduce both the memory and time requirements of the simplification process, and thanks to the spatial decomposition on the basis of Terrain trees, it can be easily parallelized. Also, since a Terrain tree after the simplification process becomes less compact and efficient, we propose an efficient post-processing step for updating hierarchical spatial decomposition. Our experiments on real-world TINs, derived from topographic and bathymetric LiDAR data, demonstrate the scalability and efficiency of our approach. Specifically, topology-aware simplification on Terrain trees uses 40\% less memory and half the time compared to the most compact and efficient connectivity-based data structure for TINs. Furthermore, the parallel simplification algorithm on the Terrain trees exhibits a 12\texttimes{} speedup with an OpenMP implementation. The quality of the output mesh is not significantly affected by the distributed and parallel simplification strategy of Terrain trees, and we obtain similar quality levels compared to the global baseline method.},
+  address    = {New York, NY, USA},
+  articleno  = {7},
+  doi        = {10.1145/3652602},
+  issue_date = {June 2024},
+  keywords   = {Terrain simplification, edge contraction, spatial indexes, topological methods, shared memory processing},
+  numpages   = {39},
+  publisher  = {Association for Computing Machinery},
+  url        = {https://doi.org/10.1145/3652602},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
